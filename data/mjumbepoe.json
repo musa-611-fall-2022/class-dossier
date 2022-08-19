@@ -1,0 +1,10 @@
+{
+  "preferred_name": "Mjumbe Poe",
+  "picture_url": "images/mjumbepoe.jpg",
+  "hometown": "Philadelphia",
+  "hometown_geojson": {
+    "type": "Point",
+    "coordinates": [-75.1, 39.5]
+  },
+  "hometown_zoom": 13
+}

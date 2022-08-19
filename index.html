@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MUSA 611 &mdash; JavaScript for Planners and Designers &mdash; Class Dossier</title>
+  </head>
+  <body>
+    <header>
+      <h1>MUSA 611:<br>JavaScript for Planners and Designers</h1>
+    </header>
+    <nav>
+      <h2>Instructors</h2>
+      <ul class="dossier-card-list" id="dossier-cards-instructors"></ul>
+
+      <h2>Students</h2>
+      <ul class="dossier-card-list" id="dossier-cards-students"></ul>
+    </nav>
+
+    <template id="dossier-card-template">
+      <li class="dossier-card">
+        <a class="dossier-card-link">
+          <span class="dossier-card-name"></span>
+          <img class="dossier-card-picture" src="" alt="">
+        </a>
+      </li>
+    </template>
+
+    <script src="main.js"></script>
+  </body>
+</html>

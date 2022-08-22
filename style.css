@@ -64,3 +64,26 @@ h2 {
   height: 300px;
   filter: grayscale(100%);
 }
+
+.unknown-name .dossier-card-name {
+  text-decoration: line-through;
+}
+
+.unknown-picture .dossier-card-picture {
+  filter: grayscale(100%) brightness(20%) contrast(40%);
+  position: relative;
+}
+
+.unknown-picture .dossier-card-link::after {
+  content: '?';
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 206px;
+  opacity: .1;
+  font-size: 150px;
+  line-height: 306px;
+  color: white;
+  text-align: center;
+}

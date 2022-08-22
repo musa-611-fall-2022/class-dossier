@@ -1,3 +1,5 @@
+/* globals document */
+
 import {initDossierCard} from '/lib/dossiercards.js';
 
 // Ordered lists of instructor and student names.

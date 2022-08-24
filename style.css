@@ -30,6 +30,7 @@ h2 {
 
 .dossier-card-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
   margin: 0;
@@ -59,10 +60,35 @@ h2 {
   writing-mode: vertical-rl;
 }
 
-.dossier-card-picture {
-  width: 200px;
+.dossier-card-picture-wrapper {
+  position: relative;
+  width: 300px;
   height: 300px;
+}
+
+.dossier-card-background-picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  filter: grayscale(100%) blur(8px) brightness(50%);
+}
+
+.dossier-card-picture {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
   filter: grayscale(100%);
+  transition: filter 0.5s linear;
+}
+
+.dossier-card-link:hover .dossier-card-picture {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  filter: grayscale(0%);
 }
 
 .unknown-name .dossier-card-name {
@@ -72,6 +98,11 @@ h2 {
 .unknown-picture .dossier-card-picture {
   filter: grayscale(100%) brightness(20%) contrast(40%);
   position: relative;
+  transition: filter 0s linear;
+}
+
+.unknown-picture:hover .dossier-card-picture {
+  filter: grayscale(100%) brightness(20%) contrast(40%);
 }
 
 .unknown-picture .dossier-card-link::after {
@@ -80,7 +111,7 @@ h2 {
   right: 0;
   top: 0;
   display: block;
-  width: 206px;
+  width: 306px;
   opacity: .1;
   font-size: 150px;
   line-height: 306px;

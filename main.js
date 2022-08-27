@@ -1,4 +1,4 @@
-/* globals document */
+/* globals document, window */
 
 import { initDossierCard } from '/lib/dossiercards.js';
 import { showDossierFile, closeDossierFile } from '/lib/dossierfile.js';
@@ -36,14 +36,14 @@ function showDossierFileBasedOnHash() {
   if (!personName) {
     closeDossierFile(dossierFileContainer);
   } else {
-    console.log('showing file for ' + personName)
+    console.log('showing file for ' + personName);
     showDossierFile(personName.slice(1), dossierFileContainer);
   }
 }
 
 function handleKeyDownEvent(evt) {
   if (evt.key == 'Escape') {
-    window.location.hash = ''
+    window.location.hash = '';
   }
 }
 
@@ -54,6 +54,6 @@ showDossierFileBasedOnHash();
 window.addEventListener('keydown', handleKeyDownEvent);
 dossierFileContainer.addEventListener('click', (evt) => {
   if (evt.target == dossierFileContainer) {
-    window.location.hash = ''
+    window.location.hash = '';
   }
-})
+});

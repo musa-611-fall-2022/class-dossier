@@ -6,7 +6,8 @@
   },
   "globals": {
     "console": "readonly",
-    "fetch": "readonly"
+    "fetch": "readonly",
+    "L": "readonly"
   },
   "rules": {
     "comma-dangle": ["error", "always-multiline"],

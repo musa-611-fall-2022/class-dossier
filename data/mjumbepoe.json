@@ -1,10 +1,15 @@
 {
   "preferred_name": "Mjumbe Poe",
+  "pronouns": "he/him",
   "picture_url": "images/mjumbepoe.jpg",
+  "github_username": "mjumbewu",
+  "portfolio_url": "https://about.mjumbepoe.com/",
   "hometown": "Philadelphia",
   "hometown_geojson": {
     "type": "Point",
-    "coordinates": [-75.1, 39.5]
+    "coordinates": [-75.16071853613768, 39.960221506616705]
   },
-  "hometown_zoom": 13
+  "hometown_zoom": 13,
+  "os": "Linux",
+  "browser": "Chrome"
 }

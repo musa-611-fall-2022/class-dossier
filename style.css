@@ -118,3 +118,105 @@ h2 {
   color: white;
   text-align: center;
 }
+
+.dossier-file-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.dossier-file-overlay.open {
+  display: block;
+}
+
+.dossier-file {
+  height: 100%;
+  max-width: calc(300px + 60rem);
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  background-color: #1A1A1A;
+}
+
+.dossier-file h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.dossier-file a {
+  color: white;
+}
+
+.dossier-file a:visited {
+  color: white;
+}
+
+.dossier-file-name::before {
+  content: 'Name: ';
+  font-weight: 800;
+}
+
+.dossier-file-pronouns::before {
+  content: 'Pronouns: ';
+  font-weight: 800;
+}
+
+.dossier-file-hometown::before {
+  content: 'Home town: ';
+  font-weight: 800;
+}
+
+.dossier-file-picture-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.dossier-file-background-picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  filter: grayscale(100%) blur(8px) brightness(50%);
+}
+
+.dossier-file-picture {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.dossier-file-icons img {
+  height: 2rem;
+}
+
+.dossier-file-text {
+  overflow-y: scroll;
+  flex-grow: 1;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+
+.dossier-file-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.dossier-file-map {
+  flex-grow: 1;
+}
+
+.dossier-file-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}

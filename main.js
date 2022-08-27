@@ -41,8 +41,14 @@ function showDossierFileBasedOnHash() {
   }
 }
 
-function handleKeyDownEvent(evt) {
+function hideDossierFileOnEscKey(evt) {
   if (evt.key == 'Escape') {
+    window.location.hash = '';
+  }
+}
+
+function hideDossierFileOnClickOutside(evt) {
+  if (evt.target == dossierFileContainer) {
     window.location.hash = '';
   }
 }
@@ -51,9 +57,5 @@ initAllDossierCards();
 window.addEventListener('hashchange', showDossierFileBasedOnHash);
 showDossierFileBasedOnHash();
 
-window.addEventListener('keydown', handleKeyDownEvent);
-dossierFileContainer.addEventListener('click', (evt) => {
-  if (evt.target == dossierFileContainer) {
-    window.location.hash = '';
-  }
-});
+window.addEventListener('keydown', hideDossierFileOnEscKey);
+dossierFileContainer.addEventListener('click', hideDossierFileOnClickOutside);

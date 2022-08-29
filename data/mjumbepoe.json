@@ -5,7 +5,7 @@
   "github_username": "mjumbewu",
   "portfolio_url": "https://about.mjumbepoe.com/",
   "hometown": "Philadelphia",
-  "hometown_geojson": {
+  "hometown_center": {
     "type": "Point",
     "coordinates": [-75.16071853613768, 39.960221506616705]
   },

@@ -1,0 +1,32 @@
+name: Testing correct file structure
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - name: Set up Node.js 16.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16.x
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm install --only=dev
+    - name: Determine changed files
+      id: files
+      uses: jitterbit/get-changed-files@v1
+      with:
+        format: json
+    - name: Run jest
+      run: |
+        ADDED_FILES='${{ steps.files.outputs.added }}' \
+        MODIFIED_FILES='${{ steps.files.outputs.modified }}' \
+        REMOVED_FILES='${{ steps.files.outputs.removed }}' \
+        npm test __tests__/test_correct_files_changed.js --color=true

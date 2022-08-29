@@ -39,10 +39,14 @@ const browserAltLabels = {
 function getDossierFileMap(fileElement) {
   if (fileElement.map === undefined) {
     const mapEl = fileElement.querySelector('.dossier-file-map');
-    fileElement.map = L.map(mapEl);
-    L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/cj3kbeqzo00022smj7akz3o1e/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWp1bWJlLXRlc3QiLCJhIjoiY2w3ZTh1NTIxMTgxNTQwcGhmODU2NW5kaSJ9.pBPd19nWO-Gt-vTf1pOHBA', {
-      maxZoom: 19,
-    }).addTo(fileElement.map);
+
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWp1bWJlLXRlc3QiLCJhIjoiY2w3ZTh1NTIxMTgxNTQwcGhmODU2NW5kaSJ9.pBPd19nWO-Gt-vTf1pOHBA';
+    fileElement.map = new mapboxgl.Map({
+      container: mapEl,
+      style: 'mapbox://styles/mapbox/cj3kbeqzo00022smj7akz3o1e',
+      center: [0, 0],
+      zoom: 0,
+    });
   }
   return fileElement.map;
 }
@@ -86,9 +90,10 @@ async function fillPersonDataIntoDossierFile(personName, fileElement) {
 
   // Update the hometown map
   const centerPoint = personData['hometown_center'] || {coordinates: [0, 0]};
-  const zoom = personData['hometown_zoom'];
+  const zoom = personData['hometown_zoom'] || 0;
   const hometownMap = getDossierFileMap(fileElement);
-  hometownMap.setView([centerPoint.coordinates[1], centerPoint.coordinates[0]], zoom);
+  hometownMap.setCenter(centerPoint.coordinates);
+  hometownMap.setZoom(zoom);
 
   // Fill in the operating system icons
   const osEl = fileElement.querySelector('.os-icon');

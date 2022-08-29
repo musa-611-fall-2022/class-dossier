@@ -7,7 +7,10 @@
   "globals": {
     "console": "readonly",
     "fetch": "readonly",
-    "L": "readonly"
+    "L": "readonly",
+    "mapboxgl": "readonly",
+    "maplibregl": "readonly",
+    "ol": "readonly"
   },
   "rules": {
     "camelcase": ["error"],

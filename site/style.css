@@ -137,7 +137,7 @@ h2 {
 
 .dossier-file {
   height: 100%;
-  max-width: calc(300px + 60rem);
+  max-width: calc(300px + 40rem);
   margin: 0 auto;
   border: 1px solid #7DD0FF;
   border-radius: 0.5rem;

@@ -1,4 +1,4 @@
-import { getPersonData } from '/lib/persondata.js';
+import { getPersonData } from './persondata.js';
 
 async function fillPersonDataIntoDossierCard(personName, cardElement) {
   let personData;

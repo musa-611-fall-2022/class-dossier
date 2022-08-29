@@ -1,4 +1,4 @@
-import { getPersonData, loadPersonHTML } from '/lib/persondata.js';
+import { getPersonData, loadPersonHTML } from './persondata.js';
 
 const osSources = {
   'Windows': 'images/windows.png',

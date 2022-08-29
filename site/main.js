@@ -1,7 +1,7 @@
 /* globals document, window */
 
-import { initDossierCard } from '/lib/dossiercards.js';
-import { showDossierFile, closeDossierFile } from '/lib/dossierfile.js';
+import { initDossierCard } from './lib/dossiercards.js';
+import { showDossierFile, closeDossierFile } from './lib/dossierfile.js';
 
 // Ordered lists of instructor and student names.
 const instructorNames = [

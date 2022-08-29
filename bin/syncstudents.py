@@ -17,7 +17,10 @@ json_template_path = ROOT / 'opt' / 'person_template.json'
 students_csv_path = ROOT / 'opt' / 'students.csv'
 students_data_dir = ROOT / 'site' / 'data'
 
-def sync_student(name):
+def sync_student(input_name):
+    last, first = input_name.split(',')
+    name = f'{first.strip()} {last.strip()}'
+
     name_slug = name.lower().replace(' ', '')
     html_path = students_data_dir / f'{name_slug}.html'
     json_path = students_data_dir / f'{name_slug}.json'
@@ -27,8 +30,13 @@ def sync_student(name):
     
     if not json_path.exists():
         shutil.copy(json_template_path, json_path)
+    
+    return name_slug
 
+print('''const studentNames = [''')
 with students_csv_path.open() as infile:
     reader = csv.DictReader(infile)
     for row in reader:
-        sync_student(row['name'])
+        name = sync_student(row['Name'])
+        print(f'''  '{name}',''')
+print('''];''')

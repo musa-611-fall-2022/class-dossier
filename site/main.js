@@ -9,10 +9,24 @@ const instructorNames = [
   'jingyili',
 ];
 const studentNames = [
-  'makaylaharper',
-  'osmanbarron',
-  'mistake',
-  'tameraaustin',
+  'yuewendai',
+  'micahepstein',
+  'henrycfeinstein',
+  'morgancharlesowaingriffiths',
+  'charleschristopherhuemmler',
+  'yuhaojia',
+  'minwookkang',
+  'benjaminkeel',
+  'yingxueou',
+  'stutisingh',
+  'jonathonsun',
+  'yifeisun',
+  'yuhaosun',
+  'zilewu',
+  'zhonghuayang',
+  'shengaoyi',
+  'hanzhizhang',
+  'xueningzhang',
 ];
 
 const cardTemplate = document.querySelector('#dossier-card-template').content.querySelector('.dossier-card');
@@ -36,7 +50,6 @@ function showDossierFileBasedOnHash() {
   if (!personName) {
     closeDossierFile(dossierFileContainer);
   } else {
-    console.log('showing file for ' + personName);
     showDossierFile(personName.slice(1), dossierFileContainer);
   }
 }

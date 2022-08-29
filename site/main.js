@@ -1,7 +1,7 @@
 /* globals document, window */
 
 import { initDossierCard } from './lib/dossiercards.js';
-import { showDossierFile, closeDossierFile } from './lib/dossierfile.js';
+import { showDossierFile, closeDossierFile, getDossierFileMap } from './lib/dossierfile.js';
 
 // Ordered lists of instructor and student names.
 const instructorNames = [
@@ -72,3 +72,5 @@ showDossierFileBasedOnHash();
 
 window.addEventListener('keydown', hideDossierFileOnEscKey);
 dossierFileContainer.addEventListener('click', hideDossierFileOnClickOutside);
+
+window.map = getDossierFileMap(dossierFileContainer);

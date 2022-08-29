@@ -154,11 +154,33 @@ h2 {
 }
 
 .dossier-file a {
-  color: white;
+  color: #7DD0FF;
 }
 
 .dossier-file a:visited {
-  color: white;
+  color: #7DD0FF;
+}
+
+.leaflet-bar a {
+  background-color: #1A1A1A;
+  border-bottom-color: #7DD0FF;
+}
+
+.leaflet-touch .leaflet-bar {
+  border: 1px solid #7DD0FF;
+  border-radius: 8px 0 8px 0;
+}
+
+.leaflet-touch .leaflet-bar a:first-child {
+  border-top-left-radius: 8px;
+}
+
+.leaflet-touch .leaflet-bar a:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: rgba(0,0,0,0.5);
 }
 
 .dossier-file-name::before {
@@ -218,6 +240,7 @@ h2 {
 
 .dossier-file-map {
   flex-grow: 1;
+  background-color: #1A1A1A;
 }
 
 .dossier-file-icons {

@@ -10,6 +10,10 @@ expect.extend({
     const pass = received.length >= n;
     return { pass, message: () => `expected "${received}" ${pass ? 'not ' : ''}to have length of at least ${n}` };
   },
+  toContainKey(received, key) {
+    const pass = key in received;
+    return { pass, message: () => `expected the key "${key}" ${pass ? 'not ' : ''}to be among the keys ${JSON.stringify(Object.keys(received).sort())}` };
+  },
   async toHaveSizeUnder(received, bytes) {
     const stats = await stat(received);
     const pass = stats.size < bytes;
@@ -73,8 +77,7 @@ describe('The modified JSON file', () => {
       if (modifiedFiles) {
         const f = modifiedJSONFiles[0];
         const data = JSON.parse(await readFile(f));
-        const dataKeys = Object.keys(data);
-        expect(dataKeys).toContain(attr);
+        expect(data).toContainKey(attr);
       }
     });
   }
@@ -88,10 +91,9 @@ describe('The modified JSON file', () => {
       const hometownCenter = data['hometown_center'];
       expect(hometownCenter).toBeDefined();
 
-      const hometownCenterKeys = Object.keys(hometownCenter);
-      expect(hometownCenterKeys).toContain('type');
+      expect(hometownCenter).toContainKey('type');
       expect(hometownCenter.type).toBe('Point');
-      expect(hometownCenterKeys).toContain('coordinates');
+      expect(hometownCenter).toContainKey('coordinates');
       expect(hometownCenter.coordinates).toHaveLength(2);
     }
   });

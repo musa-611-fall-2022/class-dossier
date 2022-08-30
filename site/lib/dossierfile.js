@@ -94,6 +94,7 @@ async function fillPersonDataIntoDossierFile(personName, fileElement) {
   const hometownMap = getDossierFileMap(fileElement);
   hometownMap.setCenter(centerPoint.coordinates);
   hometownMap.setZoom(zoom);
+  hometownMap.resize();
 
   // Fill in the operating system icons
   const osEl = fileElement.querySelector('.os-icon');

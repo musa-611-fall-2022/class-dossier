@@ -24,25 +24,92 @@ In this mini-project, you are going to add information about yourself to the cla
    - `browser`: (`string`) -- which browser you use most frequently in the OS above (one of the following: `"Chrome"`, `"Firefox"`, `"Edge"`, `"Exlorer"`, `"Opera"`, `"Safari"`)
 3. In the HTML file, answer the prompts in paragraph format. There are two sections that I've added, and you should add one more (could be hobbies, or music preferences, or whatever you'd like).
 
-You will submit your information by opening a pull request (PR) on GitHub. When you do, your PR will be subject to several automated tests for style (using eslint) and content (using jest).
+You will submit your information by opening a pull request (PR) on GitHub.
 
-## Resources
+## Testing your code
 
-### Linting
-* There are a number of rule sets for linting. We're using a custom set on top of
-ES Lint's recommended set.
-https://betterprogramming.pub/comparing-the-top-three-style-guides-and-setting-them-up-with-eslint-98ea0d2fc5b7
+When you submit your code, your PR will be subject to several automated tests for style (using eslint) and content (using jest). So, before submitting, it may be in your interest to test your changes on your computer. There are a few ways you can do this, and they will all involve installing [node.js](https://nodejs.org/).
 
-### JS Mapping Libraries
-* Comparison of popular JS mapping libraries: https://www.geoapify.com/map-libraries-comparison-leaflet-vs-mapbox-gl-vs-openlayers-trends-and-statistics
-* Carto's response to Mapbox making their JS library proprietary: https://carto.com/blog/our-thoughts-as-mapboxgl-js-2-goes-proprietary/
+Once you've installed node, install the requirements for this project. Those requirements are listed in the file _package.json_ under the `devDependencies` section, but to install them you just have to open the repository folder in a terminal and run:
 
-### Web Map Zoom Levels
-* Leaflet's documentation on zoom levels: https://leafletjs.com/examples/zoom-levels/
+```bash
+npm install --include dev
+```
 
-### GeoJSON
-* More than you ever wanted to know about GeoJSON: https://macwright.com/2015/03/23/geojson-second-bite.html
-* Introduction to Web Mapping chapter on GeoJSON: http://132.72.155.230:3838/js/geojson-1.html
+You'll only have to do that once for each project you work on. Now you can choose one (or both) of the following ways to test your changes.
+
+1. If you want to test your changes in a web browser, you'll want to start a web server on your computer. To do that, run the following from your repository folder:
+
+   ```bash
+   npx http-server
+   ```
+
+   You should see some output that looks something like:
+
+   ```
+   Starting up http-server, serving ./
+
+   ...
+
+   Available on:
+   http://127.0.0.1:8080
+   http://192.168.1.201:8080
+   http://172.17.0.1:8080
+   Hit CTRL-C to stop the server
+   ```
+
+   Once you see that, you can go to `http://127.0.0.1:8080/site/` or `http://localhost:8080/site/` in your browser ("localhost" is usually just an alias for the address "127.0.0.1", which is almost always the address of the computer you're on now).
+
+   Scroll to your picture and click to open it. Does it work? Is the JavaScript console free of errors? If so, that's a good sign.
+
+2. If you want to test your changes against the same tests that will run on GitHub when you submit your code, then **modify the following command (replace everywhere that it says `mjumbepoe` with the name of your files)** and run the whole command in your terminal:
+
+   ```bash
+   ADDED_FILES='["site/images/mjumbepoe.jpg"]' \
+   MODIFIED_FILES='["site/data/mjumbepoe.json", "site/data/mjumbepoe.html"]' \
+   REMOVED_FILES='[]' \
+   npm test
+   ```
+
+   If everything's correct you'll see something like:
+
+   ```
+   PASS  __tests__/test_correct_files_changed.js
+     The changed files
+       ✓ should include exactly one HTML file in the data folder (1 ms)
+       ✓ should include exactly one JSON file in the data folder (1 ms)
+     The added files
+       ✓ should include at least one picture in the images folder
+       ✓ should not include files in any other folder besides images
+     The removed files
+       ✓ should be empty (1 ms)
+     The modified JSON file
+       ✓ should contain the attribute preferred_name (12 ms)
+       ✓ should contain the attribute pronouns (1 ms)
+       ✓ should contain the attribute picture_url
+       ✓ should contain the attribute github_username (1 ms)
+       ✓ should contain the attribute portfolio_url (1 ms)
+       ✓ should contain the attribute hometown (1 ms)
+       ✓ should contain the attribute hometown_center (1 ms)
+       ✓ should contain the attribute hometown_zoom (2 ms)
+       ✓ should contain the attribute os (2 ms)
+       ✓ should contain the attribute browser (1 ms)
+       ✓ should contain a GeoJSON point in the hometown_center attribute (3 ms)
+     The added image(s)
+       ✓ should not be more than 1MB each
+     
+   Test Suites: 1 passed, 1 total
+   Tests:       17 passed, 17 total
+   Snapshots:   0 total
+   Time:        0.367 s, estimated 1 s
+   Ran all test suites.
+   ```
+
+## Relevant topic resources
+
+* [Web map zoom levels](https://github.com/musa-611-fall-2022/course-info/blob/main/resources/webmap-tiles.md) (check out the link to Leaflet's docs in there)
+* [The GeoJSON data format](https://github.com/musa-611-fall-2022/course-info/blob/main/resources/data-format-geojson.md) (specifically, read the **Introduction to Web Mapping** chapter)
+* [JS Web Mapping Libraries](https://github.com/musa-611-fall-2022/course-info/blob/main/resources/webmap-libraries.md)
 
 ## Acknowledgements
 * "_blurryperson1.jpg" from https://www.istockphoto.com/photo/blurry-silhouette-man-with-bokeh-sea-background-black-and-white-gm1073388114-287305122

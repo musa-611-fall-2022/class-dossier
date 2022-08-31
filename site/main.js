@@ -15,6 +15,7 @@ const studentNames = [
   'micahepstein',
   'henrycfeinstein',
   'morgancharlesowaingriffiths',
+  'yihonghu',
   'charliechristopherhuemmler',
   'yuhaojia',
   'minwookkang',
@@ -28,8 +29,10 @@ const studentNames = [
   'zilewu',
   'zhonghuayang',
   'shengaoyi',
+  'troyzh',
   'hanzhizhang',
   'xueningzhang',
+  'yingtongzhong',
 ];
 const cardTemplate = document.querySelector('#dossier-card-template').content.querySelector('.dossier-card');
 const instructorCardList = document.querySelector('#dossier-cards-instructors');

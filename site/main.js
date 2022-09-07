@@ -9,26 +9,31 @@ const instructorNames = [
   'jingyili',
 ];
 const studentNames = [
+  'simranarora',
+  'myronjoelcabaticbanez',
   'yuewendai',
   'micahepstein',
   'henrycfeinstein',
   'morgancharlesowaingriffiths',
-  'charleschristopherhuemmler',
+  'yihonghu',
+  'charliechristopherhuemmler',
   'yuhaojia',
   'minwookkang',
-  'benjaminkeel',
+  'benkeel',
+  'jieli',
   'yingxueou',
   'stutisingh',
   'jonathonsun',
+  'tomsun',
   'yifeisun',
-  'yuhaosun',
   'zilewu',
   'zhonghuayang',
   'shengaoyi',
+  'troyzh',
   'hanzhizhang',
   'xueningzhang',
+  'yingtongzhong',
 ];
-
 const cardTemplate = document.querySelector('#dossier-card-template').content.querySelector('.dossier-card');
 const instructorCardList = document.querySelector('#dossier-cards-instructors');
 const studentCardList = document.querySelector('#dossier-cards-students');

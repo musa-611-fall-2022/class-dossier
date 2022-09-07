@@ -1,3 +1,17 @@
 {
-  
-}
+        "preferred_name": "yifei",
+        "pronouns": "she/her", 
+        "picture_url": "images/yifei.jpg", 
+        "portfolio_url": "https:github.com/miaomiao612", 
+        "hometown": "Xi'an, China", 
+        "hometown_center": {
+            "type": "Point",
+            "coordinates": [
+              109.06677246093749,
+              34.29636658456932
+            ]
+          }, 
+        "hometown_zoom":8, 
+        "os": "Windows", 
+        "browser": "Chrome" 
+    }

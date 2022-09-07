@@ -1,3 +1,15 @@
 {
-  
+  "preferred_name": "Shengao Yi",
+  "pronouns": "he/him",
+  "picture_url": "images/ShengaoYi.jpg",
+  "github_username": "Yesao",
+  "portfolio_url": "https://github.com/Yesao",
+  "hometown": "Jingzhou",
+  "hometown_center": {
+    "type": "Point",
+    "coordinates": [112.251045, 30.335477]
+  },
+  "hometown_zoom": 9.9,
+  "os": "Windows",
+  "browser": "Chrome"
 }

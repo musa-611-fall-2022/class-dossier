@@ -1,9 +1,9 @@
 {
-    "preferred_name": "Yifei Sun",
+    "preferred_name": "yifei",
     "pronouns": "she/her", 
     "picture_url": "images/yifei sun.jpg", 
-    "portfolio_url": "https:github.com/miaomiao612", 
     "github_username": "miaomiao612",
+    "portfolio_url": "https:github.com/miaomiao612", 
     "hometown": "Xi'an, China", 
     "hometown_center": {
         "type": "Point",

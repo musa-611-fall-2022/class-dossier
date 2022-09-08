@@ -13,6 +13,7 @@ const studentNames = [
   'myronjoelcabaticbanez',
   'yuewendai',
   'micahepstein',
+  'sofiafasullo',
   'henrycfeinstein',
   'morgancharlesowaingriffiths',
   'yihonghu',

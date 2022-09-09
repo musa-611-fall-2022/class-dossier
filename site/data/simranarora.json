@@ -1,3 +1,15 @@
 {
-  
-}
+    "preferred_name": "Simran Arora, or Sim for short",
+    "pronouns": "she/her",
+    "picture_url": "images/Sim.jpeg",
+    "github_username": "simran-aro",
+    "portfolio_url": "https://simran-aro.github.io/",
+    "hometown": "Mumbai",
+    "hometown_center": {
+      "type": "Point",
+      "coordinates": [72.88299467639754, 19.095340762821593]
+    },
+    "hometown_zoom": 9.9,
+    "os": "Windows",
+    "browser": "Edge"
+  }

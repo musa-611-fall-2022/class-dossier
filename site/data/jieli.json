@@ -1,15 +1,16 @@
 {
-    "preferred_name": "Jie Li",
-    "pronouns": "he/him",
-    "picture_url": "images/Photo_Jie_Li.jpg",
-    "github_username": "Leejere",
-    "portfolio_url": "https://jieliurban.com",
-    "hometown": "Yong'an, China",
-    "hometown_center": {
-      "type": "Point",
-      "coordinates": [117.358207, 25.972936]
-    },
-    "hometown_zoom": 13,
-    "os": "Linux",
-    "browser": "Edge"
-  }
+	"preferred_name": "Jingyi Li",
+	"pronouns": "she/her",
+	"picture_url": "images/jingyili.jpg",
+	"github_username": "jyl-jyl",
+	"portfolio_url": "https://github.com/jyl-jyl",
+	"hometown": "Baoding",
+	"hometown_center": {
+		"type": "Point",
+		"coordinates": [115.49218851246388, 38.86743144497768]
+	},
+	"hometown_zoom": 9.9,
+	"os": "MacOS",
+	"browser": "Chrome"
+
+}

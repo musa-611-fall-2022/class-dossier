@@ -3,13 +3,13 @@
     "pronouns": "he/him",
     "picture_url": "images/Photo_Jie_Li.jpg",
     "github_username": "Leejere",
-    "portfolio_url": "https://leejere.github.io/Portfolio-Jie-Li/",
+    "portfolio_url": "https://jieliurban.com",
     "hometown": "Yong'an, China",
     "hometown_center": {
       "type": "Point",
       "coordinates": [117.358207, 25.972936]
     },
     "hometown_zoom": 13,
-    "os": "Windoes",
-    "browser": "Microsoft Edge"
+    "os": "Linux",
+    "browser": "Edge"
   }

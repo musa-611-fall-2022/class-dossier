@@ -1,3 +1,16 @@
 {
-  
+ "preferred_name": "Morgan Griffiths", 
+ "pronouns": "he/him", 
+ "picture_url":"images/M_Griffiths_Photo.jpg", 
+ "github_username": "Morgangriff12",
+ "portfolio_url":"https://morgangriff12.github.io/morgangriffiths.github.io/", 
+ "hometown": "Tucson, Arizona", 
+ "hometown_center": {
+    "type": "Point", 
+    "coordinates": [-110.9531649046556, 32.25518335998906]
+ }, 
+ "hometown_zoom": 9, 
+ "os": "Windows", 
+ "browser": "Chrome"
+
 }

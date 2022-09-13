@@ -6,7 +6,7 @@
   "portfolio_url": "https://www.linkedin.com/in/henry-feinstein-99a26111a/",
   "hometown": "Arlington, MA",
   "hometown_center": {
-    "type": "point",
+    "type": "Point",
     "coordinates": [-71.1749623855896, 42.415679219774766]
   },
   "hometown_zoom": 9.9,

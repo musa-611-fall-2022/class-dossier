@@ -1,3 +1,15 @@
 {
-  
+  "preferred_name": "Henry",
+  "pronouns": "he/him",
+  "picture_url": "images/henry_feinstein.jpg",
+  "github_username": "henryfeinstein",
+  "portfolio_url": "https://www.linkedin.com/in/henry-feinstein-99a26111a/",
+  "hometown": "Arlington, MA",
+  "hometown_center": {
+    "type": "point",
+    "coordinates": [-71.1749623855896, 42.415679219774766]
+  },
+  "hometown_zoom": 9.9,
+  "os": "Windows",
+  "browser": "Chrome"
 }

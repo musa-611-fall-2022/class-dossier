@@ -1,3 +1,12 @@
 {
-  
+  "preferred_name":"Sofia",
+  "pronouns":"she/her/hers",
+  "picture_url":"guthub.com/mjumbewu/class-dossier/site/images/SofiaFasullo_selfie.jpg",
+  "github_username":"SofiaFasullo",
+  "portfolio_url":"https://sofia.github.io/",
+  "hometown":"Albany, NY",
+  "hometown_center":"[-73.7896728515625,42.72683914955442]",
+  "hometown_zoom":"11",
+  "os":"Windows",
+  "browser":"Chrome"
 }

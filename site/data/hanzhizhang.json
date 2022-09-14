@@ -1,3 +1,14 @@
 {
-  
+"preferred_name": "Hanzhi",
+"pronouns": "she/her",
+"picture_url": "images/hazelpic.jpg",
+"github_username": "hazellla",
+"hometown": "China",
+"hometown_center": {
+"type": "Point",
+"coordinates": [103.7933349609375,36.067972197786474]
+},
+"hometown_zoom": 12,
+"os": "Windows",
+"browser": "Chrome"
 }

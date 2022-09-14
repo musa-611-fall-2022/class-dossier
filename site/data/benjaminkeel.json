@@ -8,7 +8,7 @@
     "hometown": "Cincinnati, OH",
     "hometown_center": 
         {"type": "Point", "coordinates": [-84.497926, 39.114058]},
-    "hometown_zoom": 12,
+    "hometown_zoom": 10,
     "os": "Windows",
     "browser": "Firefox"
 

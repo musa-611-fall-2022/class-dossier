@@ -62,13 +62,15 @@ function showDossierFileBasedOnHash() {
 
 function hideDossierFileOnEscKey(evt) {
   if (evt.key == 'Escape') {
-    window.location.hash = '';
+    window.history.pushState("", document.title, window.location.pathname);
+    showDossierFileBasedOnHash();
   }
 }
 
 function hideDossierFileOnClickOutside(evt) {
   if (evt.target == dossierFileContainer) {
-    window.location.hash = '';
+    window.history.pushState("", document.title, window.location.pathname);
+    showDossierFileBasedOnHash();
   }
 }
 

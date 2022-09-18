@@ -8,7 +8,7 @@
     "hometown_center": {
         "type": "Point", "coordinates": [-105.28000831604004, 40.01796882851163]
       },
-    "hometown_zoom":13.5,
+    "hometown_zoom":13,
     "os":"MacOS",
     "browser": "Chrome"
 }

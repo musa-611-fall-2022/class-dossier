@@ -60,17 +60,25 @@ function showDossierFileBasedOnHash() {
   }
 }
 
+function clearHash() {
+  const event = new window.HashChangeEvent('hashchange',
+    {
+      oldURL: window.location.toString(),
+      newURL: window.location.toString().split('#')[0],
+    });
+  window.history.pushState('', document.title, window.location.pathname);
+  window.dispatchEvent(event);
+}
+
 function hideDossierFileOnEscKey(evt) {
   if (evt.key == 'Escape') {
-    window.history.pushState("", document.title, window.location.pathname);
-    showDossierFileBasedOnHash();
+    clearHash();
   }
 }
 
 function hideDossierFileOnClickOutside(evt) {
   if (evt.target == dossierFileContainer) {
-    window.history.pushState("", document.title, window.location.pathname);
-    showDossierFileBasedOnHash();
+    clearHash();
   }
 }
 

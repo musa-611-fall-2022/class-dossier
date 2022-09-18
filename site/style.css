@@ -250,20 +250,6 @@ h2 {
   padding: 1rem;
 }
 
-@keyframes pulse {
-	0% {
-		opacity: 1;
-	}
-
-	70% {
-		opacity: 0.5;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 .dossier-file-overlay .loading-overlay {
   display: none;
 }
@@ -283,6 +269,12 @@ h2 {
 
 .dossier-file-overlay.loading .dossier-file {
   overflow: hidden;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  70% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
 .dossier-file-overlay.loading .loading-text {

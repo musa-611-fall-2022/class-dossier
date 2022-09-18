@@ -136,6 +136,7 @@ h2 {
 }
 
 .dossier-file {
+  position: relative;
   height: 100%;
   max-width: calc(300px + 40rem);
   margin: 0 auto;
@@ -247,6 +248,45 @@ h2 {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.dossier-file-overlay .loading-overlay {
+  display: none;
+}
+
+.dossier-file-overlay.loading .loading-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 2;
+}
+
+.dossier-file-overlay.loading .dossier-file {
+  overflow: hidden;
+}
+
+.dossier-file-overlay.loading .loading-text {
+  animation: pulse 1s infinite;
 }
 
 @media screen and (max-width: 760px) {

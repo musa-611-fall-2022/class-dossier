@@ -12,6 +12,7 @@ const instructorNames = [
 const studentNames = [
   'simranarora',
   'myronjoelcabaticbanez',
+  'promitchatterjee',
   'yuewendai',
   'micahepstein',
   'sofiafasullo',
@@ -31,10 +32,9 @@ const studentNames = [
   'zilewu',
   'zhonghuayang',
   'shengaoyi',
-  'troyzh',
+  'zoeyoo',
   'hanzhizhang',
   'xueningzhang',
-  'yingtongzhong',
 ];
 const cardTemplate = document.querySelector('#dossier-card-template').content.querySelector('.dossier-card');
 const instructorCardList = document.querySelector('#dossier-cards-instructors');

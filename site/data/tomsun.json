@@ -1,0 +1,17 @@
+{       
+  "preferred_name": "Tom",
+  "pronouns": "He/him",
+  "picture_url": ".\\images\\FG.jpg",
+  "github_username": "tomsun1999",
+  "portfolio_url": "https://github.com/tomsun1999",
+  "hometown": "Shanghai",
+  "hometown_center": 
+  {
+    "type": "Point",
+    "coordinates": [121.37557983398438,
+    31.103509440594742]
+  },
+  "hometown_zoom": 8.576977039014434,
+  "os": "Windows",
+  "browser": "Chrome"
+}

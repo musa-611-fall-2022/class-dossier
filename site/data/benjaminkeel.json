@@ -1,3 +1,15 @@
 {
   
+    "preferred_name": "Ben Keel",
+    "pronouns" : "he/him/his",
+    "picture_url": "images/bennkeel.jpg",
+    "github_username": "bennkeel",
+    "portfolio_url": "https://benkeel.design/",
+    "hometown": "Cincinnati, OH",
+    "hometown_center": 
+        {"type": "Point", "coordinates": [-84.497926, 39.114058]},
+    "hometown_zoom": 10,
+    "os": "Windows",
+    "browser": "Firefox"
+
 }

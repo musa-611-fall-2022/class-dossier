@@ -1,0 +1,16 @@
+{
+    "preferred_name": "Yihong Hu",
+    "does_live_in_philadelphia": true,
+    "pronouns": "she/her",
+    "picture_url": "images/Yihong Hu Head Shot 2.jpg",
+    "github_username": "Bammboo-Forest-Rain",
+    "portfolio_url" : "https://sites.google.com/view/yihonghu/home",
+    "hometown": "Wenzhou & Dar es Salaam",
+    "hometown_center": {
+        "type": "Point",
+        "coordinates": [39.28436279296875, -6.821443549066319]
+      },
+    "hometown_zoom": 9.9,
+    "os": "Windows",
+    "browser": "Chrome"
+}

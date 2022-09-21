@@ -2,6 +2,7 @@
 
 import { initDossierCard } from './lib/dossiercards.js';
 import { showDossierFile, closeDossierFile, getDossierFileMap } from './lib/dossierfile.js';
+import { people } from './lib/persondata.js';
 
 // Ordered lists of instructor and student names.
 const instructorNames = [
@@ -11,10 +12,13 @@ const instructorNames = [
 const studentNames = [
   'simranarora',
   'myronjoelcabaticbanez',
+  'promitchatterjee',
   'yuewendai',
   'micahepstein',
+  'sofiafasullo',
   'henrycfeinstein',
   'morgancharlesowaingriffiths',
+  'yihonghu',
   'charliechristopherhuemmler',
   'yuhaojia',
   'minwookkang',
@@ -28,6 +32,7 @@ const studentNames = [
   'zilewu',
   'zhonghuayang',
   'shengaoyi',
+  'zoeyoo',
   'hanzhizhang',
   'xueningzhang',
 ];
@@ -56,15 +61,25 @@ function showDossierFileBasedOnHash() {
   }
 }
 
+function clearHash() {
+  const event = new window.HashChangeEvent('hashchange',
+    {
+      oldURL: window.location.toString(),
+      newURL: window.location.toString().split('#')[0],
+    });
+  window.history.pushState('', document.title, window.location.pathname);
+  window.dispatchEvent(event);
+}
+
 function hideDossierFileOnEscKey(evt) {
   if (evt.key == 'Escape') {
-    window.location.hash = '';
+    clearHash();
   }
 }
 
 function hideDossierFileOnClickOutside(evt) {
   if (evt.target == dossierFileContainer) {
-    window.location.hash = '';
+    clearHash();
   }
 }
 
@@ -76,3 +91,4 @@ window.addEventListener('keydown', hideDossierFileOnEscKey);
 dossierFileContainer.addEventListener('click', hideDossierFileOnClickOutside);
 
 window.map = getDossierFileMap(dossierFileContainer);
+window.people = people;

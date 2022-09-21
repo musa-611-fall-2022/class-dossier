@@ -1,3 +1,16 @@
 {
-  
+    "preferred_name": "Jonathon Sun",
+    "pronouns": "he/him",
+    "picture_url": "images/JonathonSun.jpg",
+    "github_username": "Jonathonsun03",
+    "portfolio_url": "https://jonathonsun03.github.io/portfolio/",
+    "hometown": "Columbus, Ohio",
+    "hometown_center": {
+      "type": "Point",
+      "coordinates": [-83.08170318603514,
+      40.130328566481566]
+    },
+    "hometown_zoom": 9.9,
+    "os": "Windows",
+    "browser": "Chrome"      
 }

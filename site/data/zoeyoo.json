@@ -1,3 +1,27 @@
 {
-  
+    "preferred_name": "Zoe Yoo",
+    "pronouns": "She/Her",
+    "picture_url": "../images/zoe_photo",
+    "github_username": "zoenyoo",
+    "portfolio_url": "https://zoenyoo.github.io/",
+    "hometown": "Thousand Oaks, CA",
+    "hometown_center": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -118.85971069335938,
+                        34.17658924285006
+                    ]
+                }
+            }
+        ]
+    },
+    "hometown_zoom": 11.5,
+    "os": "Windows",
+    "browser": "Chrome"
 }

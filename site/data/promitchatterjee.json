@@ -1,0 +1,19 @@
+{
+  "preferred_name" : "Promit Chatterjee",
+  "pronouns" : "he/him",
+  "picture_url" : "",
+  "github_username" : "promchat",
+  "portfolio_url" : "",
+  "hometown" : "Kolkata",
+  "hometown_center" : {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.5726, 88.3639],
+        "properties": {
+            "name": "Kolkata"}
+    }
+  },
+  "hometown_zoom" : 4,
+  "os" : "windows",
+  "browser" : "chrome"
+}

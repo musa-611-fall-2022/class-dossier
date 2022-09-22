@@ -22,7 +22,7 @@ const studentNames = [
   'charliechristopherhuemmler',
   'yuhaojia',
   'minwookkang',
-  'benkeel',
+  'benjaminkeel',
   'jieli',
   'yingxueou',
   'stutisingh',

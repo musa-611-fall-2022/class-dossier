@@ -1,3 +1,16 @@
 {
-  
+	"preferred_name": "Xuening Zhang",
+	"pronouns": "SHE/HER",
+	"picture_url": "images/XueningZhang.jpg",
+	"github_username": "xueningz22",
+	"portfolio_url": "https://github.com/xueningz22",
+	"hometown": "Weifang",
+	"hometown_center": {
+		"type": "Point",
+		"coordinates": [119.10483063103683, 36.72709011630449]
+	},
+	"hometown_zoom": 9.9,
+	"os": "MacOS",
+	"browser": "Chrome"
+
 }

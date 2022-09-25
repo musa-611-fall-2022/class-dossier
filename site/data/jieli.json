@@ -1,3 +1,15 @@
 {
-  
-}
+    "preferred_name": "Jie Li",
+    "pronouns": "he/him",
+    "picture_url": "images/jieli.jpg",
+    "github_username": "Leejere",
+    "portfolio_url": "https://jieliurban.com",
+    "hometown": "Yong'an, China",
+    "hometown_center": {
+      "type": "Point",
+      "coordinates": [117.358207, 25.972936]
+    },
+    "hometown_zoom": 13,
+    "os": "Linux",
+    "browser": "Edge"
+  }

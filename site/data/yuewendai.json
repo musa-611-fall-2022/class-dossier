@@ -1,3 +1,17 @@
 {
-  
+   "preferred_name" : "Yuewen Dai",
+   "pronouns" : "She/Her",
+   "picture_url" : "images/JennyDai.jpg",
+   "github_username":"YuewenDai",
+   "portfolio_url":"https://github.com/YuewenDai",
+   "hometown": "Beijing,China",
+   "hometown_center":{ 
+    "type": "Point",
+    "coordinates": [
+        116.37619972229004,
+        39.85928656392012]},
+   "hometown_zoom": 9.9,
+   "os": "Windows",
+   "browser": "Chrome"
+
 }

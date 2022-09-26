@@ -1,3 +1,13 @@
 {
-  
+    "preferred_name": "Charlie Huemmler",
+    "pronouns": "he/him",
+    "picture_url": "images/charliehuemmler.jpg",
+    "github_username": "chuembucket",
+    "portfolio_url": "github.com/chuembucket",
+    "hometown": "Rose Valley, PA",
+    "hometown_center": {"type": "Point", "coordinates": [ -75.38432121276855,  39.8992015115692]},
+    "hometown_zoom": 13,
+    "os": "Windows",
+    "browser": "Chrome"
+ 
 }

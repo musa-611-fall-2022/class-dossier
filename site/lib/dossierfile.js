@@ -70,8 +70,10 @@ async function fillPersonDataIntoDossierFile(personName, fileElement) {
     const pictureNumber = 1;//Math.floor(Math.random() * 3) + 1;
     personData['picture_url'] = `images/_blurryperson${pictureNumber}.jpg`;
   }
+  pictureEl.setAttribute('src', '');
   pictureEl.setAttribute('src', personData['picture_url']);
   pictureEl.setAttribute('alt', `Picture of ${personData['preferred_name']}`);
+  bgPictureEl.setAttribute('src', '');
   bgPictureEl.setAttribute('src', personData['picture_url']);
   bgPictureEl.setAttribute('alt', `Picture of ${personData['preferred_name']}`);
 
@@ -122,6 +124,7 @@ function closeDossierFile(fileElement) {
 async function showDossierFile(personName, fileElement) {
   try {
     fileElement.classList.add('open', 'loading');
+    fileElement.querySelector('#dossier-file').scrollTop = 0;
     await fillPersonDataIntoDossierFile(personName, fileElement);
     fileElement.classList.remove('loading');
   } catch (err) {

@@ -1,3 +1,16 @@
 {
-  
+    "preferred_name": "Yuhao Jia",
+    "pronouns": "him/his",
+    "picture_url": "images/Yuhao.jpg",
+    "github_username": "YuhaoChrisJ",
+    "portfolio_url": "https://drive.google.com/file/d/1GmDl_HXC64EdaoO_wQ9LtNpIwJm-tetE/view?usp=sharing",
+    "hometown": "Shanghai, China",
+    "hometown_center": { "type": "Point",
+    "coordinates": [
+      121.46347045898438,
+      31.209277877460135
+    ]},
+    "hometown_zoom": 10,
+    "os":  "Windows",
+    "browser": "Chrome"
 }

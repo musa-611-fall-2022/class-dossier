@@ -1,3 +1,16 @@
-{
+{	
+"preferred_name": "Zile Wu",
+"pronouns": "he/his",
+"picture_url": "images/zile.png",
+"github_username": "wuzile98",
+"portfolio_url": "https://github.com/wuzile98",
+"hometown": "Lanzhou",
+"hometown_center": {
+    "type": "Point",
+    "coordinates": [103.80342830198536,36.063742763152135]
+},
+"hometown_zoom": 9.9,
+"os": "Windows",
+"browser": "Chrome"
   
 }

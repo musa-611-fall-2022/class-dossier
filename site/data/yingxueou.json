@@ -1,3 +1,18 @@
 {
-  
+    "preferred_name": "Yingxue Ou",
+    "pronouns": "She/Her",
+    "picture_url": "images/YingxueOu.jpg",
+    "github_username": "yingxueou",
+    "portfolio_url": "https://github.com/yingxueou",
+    "hometown": "Guilin",
+    "hometown_center": {
+        "type": "Point",
+        "coordinates": [
+          110.15167236328125,
+          25.24096949112138
+        ]
+      },
+      "hometown_zoom": 9.9,
+      "os": "Windows",
+      "browser": "Chrome"
 }

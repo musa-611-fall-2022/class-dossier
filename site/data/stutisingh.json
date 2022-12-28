@@ -1,3 +1,16 @@
 {
+    "preferred_name": "Stuti Singh",
+  "pronouns": "she/her",
+  "picture_url": "images/Stuti_Singh.jpg",
+  "github_username": "Stu95",
+  "portfolio_url": "",
+  "hometown": "Lucknow, India",
+  "hometown_center": {
+    "type": "Point",
+    "coordinates": [80.9346001, 26.8381]
+  },
+  "hometown_zoom": 9.9,
+  "os": "Windows",
+  "browser": "Chrome"
   
 }

@@ -2,6 +2,7 @@
 
 import { initDossierCard } from './lib/dossiercards.js';
 import { showDossierFile, closeDossierFile, getDossierFileMap } from './lib/dossierfile.js';
+import { people } from './lib/persondata.js';
 
 // Ordered lists of instructor and student names.
 const instructorNames = [
@@ -11,6 +12,7 @@ const instructorNames = [
 const studentNames = [
   'simranarora',
   'myronjoelcabaticbanez',
+  'promitchatterjee',
   'yuewendai',
   'micahepstein',
   'sofiafasullo',
@@ -20,7 +22,7 @@ const studentNames = [
   'charliechristopherhuemmler',
   'yuhaojia',
   'minwookkang',
-  'benkeel',
+  'benjaminkeel',
   'jieli',
   'yingxueou',
   'stutisingh',
@@ -30,10 +32,9 @@ const studentNames = [
   'zilewu',
   'zhonghuayang',
   'shengaoyi',
-  'troyzh',
+  'zoeyoo',
   'hanzhizhang',
   'xueningzhang',
-  'yingtongzhong',
 ];
 const cardTemplate = document.querySelector('#dossier-card-template').content.querySelector('.dossier-card');
 const instructorCardList = document.querySelector('#dossier-cards-instructors');
@@ -90,3 +91,4 @@ window.addEventListener('keydown', hideDossierFileOnEscKey);
 dossierFileContainer.addEventListener('click', hideDossierFileOnClickOutside);
 
 window.map = getDossierFileMap(dossierFileContainer);
+window.people = people;

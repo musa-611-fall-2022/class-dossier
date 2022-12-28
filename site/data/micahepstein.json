@@ -1,3 +1,14 @@
 {
-  
+    "preferred_name":"micah epstein",
+    "pronouns":"they/them",
+    "picture_url":"images/headshot_me.jpg",
+    "github_username":"MicahEpstein",
+    "portfolio_url":"https://meandmy.systems/",
+    "hometown":"Boulder, CO",
+    "hometown_center": {
+        "type": "Point", "coordinates": [-105.28000831604004, 40.01796882851163]
+      },
+    "hometown_zoom":11.5,
+    "os":"MacOS",
+    "browser": "Chrome"
 }
